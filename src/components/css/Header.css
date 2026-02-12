@@ -250,6 +250,7 @@
   animation: toggleFade 0.6s ease-out backwards;
   animation-delay: 0.6s;
   position: relative;
+  color: white;
   z-index: 1;
 }
 
