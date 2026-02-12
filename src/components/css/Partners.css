@@ -1,0 +1,49 @@
+.partners-section {
+  background: linear-gradient(135deg, #ffffff 0%, #f5fbff 100%);
+  margin: auto;
+}
+.partners-subtitle {
+  font-size: 1.05rem;
+  color: #667085;
+  margin-top: 12px;
+}
+.partner-item {
+  background: white;
+  border-radius: 16px;
+  height: 180px;
+  box-shadow: -2px 5px 19px 6px #00000021;
+  transition: all 0.3s ease;
+}
+
+.partner-item:hover {
+  transform: translateY(-10px) rotateX(5deg);
+  box-shadow: -2px 5px 50px 11px #00bcd440;
+}
+.partner-logo {
+  width: 100px;
+  margin: auto;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  padding: 5px;
+  background: #fff;
+  border: 2px solid #00bcd433;
+}
+.partner-name {
+  font-size: 0.95rem;
+  line-height: 1.2;
+}
+
+@media (max-width: 575.98px) {
+  .partners-section {
+    padding: 55px 0;
+  }
+
+  .partner-item {
+    padding: 12px 8px;
+  }
+
+  .partner-name {
+    font-size: 0.88rem;
+  }
+}

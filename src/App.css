@@ -1,0 +1,127 @@
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+  color: #333;
+  overflow-x: hidden !important;
+}
+
+:root {
+  --primary-color: #00bcd4;
+  --secondary-color: #2196f3;
+  --dark-color: #1a1a2e;
+  --light-color: #f8f9fa;
+  --border-radius: 12px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Button Styles */
+.btn-primary {
+  background: linear-gradient(
+    135deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(
+    135deg,
+    var(--secondary-color),
+    var(--primary-color)
+  );
+}
+
+.btn-outline-light:hover {
+  background-color: white;
+  color: var(--dark-color);
+}
+
+/* Text Classes */
+.text-center {
+  text-align: center;
+}
+
+.text-md-end {
+  text-align: end;
+}
+
+.gap-4 {
+  gap: 2rem;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    135deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  border-radius: 5px !important;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-color);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
+  .container-fluid {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+/* Link Styles */
+a {
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+/* Form Inputs */
+.form-control {
+  border: 1px solid #ddd;
+  padding: 10px 15px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(0, 188, 212, 0.1);
+}
+
+/* Card Styles */
+.card {
+  border: none;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
