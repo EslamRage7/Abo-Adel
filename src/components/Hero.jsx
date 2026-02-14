@@ -18,7 +18,7 @@ export default function Hero() {
         <div className="text-center">
           <h1 className="hero-title">
             Building Impact Across
-            <span className="gradient-text">Diverse Industries</span>
+            <span className="gradient-text"> Diverse Industries</span>
           </h1>
         </div>
       </div>
