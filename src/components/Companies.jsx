@@ -58,7 +58,7 @@ export default function Companies() {
                     <img src={company.logo} alt={company.name} />
                   </div>
                   <div className="company-content text-center">
-                    <h3 className="company-name">{company.name}</h3>
+                    <h3 className="company-name mt-3">{company.name}</h3>
                     <p className="company-category">{company.category}</p>
                     <p className="company-description text-truncate">
                       {company.description}
