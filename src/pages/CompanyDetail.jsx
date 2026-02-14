@@ -35,8 +35,7 @@ export default function CompanyDetail() {
               <p>The company you're looking for doesn't exist.</p>
               <button
                 className="btn btn-primary mt-4"
-                onClick={() => navigate("/")}
-              >
+                onClick={() => navigate("/")}>
                 Back to Home
               </button>
             </div>
@@ -76,8 +75,7 @@ export default function CompanyDetail() {
             <div data-aos="fade-right">
               <button
                 className="btn btn-view mb-5"
-                onClick={() => navigate("/")}
-              >
+                onClick={() => navigate("/")}>
                 <FaArrowLeft /> Back to Companies
               </button>
             </div>
@@ -104,8 +102,7 @@ export default function CompanyDetail() {
                   <div
                     className="stat-box"
                     data-aos="zoom-in"
-                    data-aos-delay="100"
-                  >
+                    data-aos-delay="100">
                     <div className="stat-icon">📅</div>
                     <div className="stat-label">Founded</div>
                     <div className="stat-value">{company.year}</div>
@@ -113,8 +110,7 @@ export default function CompanyDetail() {
                   <div
                     className="stat-box"
                     data-aos="zoom-in"
-                    data-aos-delay="150"
-                  >
+                    data-aos-delay="150">
                     <div className="stat-icon">👥</div>
                     <div className="stat-label">Employees</div>
 
@@ -125,8 +121,7 @@ export default function CompanyDetail() {
                   <div
                     className="stat-box"
                     data-aos="zoom-in"
-                    data-aos-delay="200"
-                  >
+                    data-aos-delay="200">
                     <div className="stat-icon">🎯</div>
                     <div className="stat-label">Focus Area</div>
                     <div className="stat-value">{company.focus}</div>
@@ -156,8 +151,7 @@ export default function CompanyDetail() {
                   <div
                     className="strength-item"
                     data-aos="fade-up"
-                    data-aos-delay="50"
-                  >
+                    data-aos-delay="50">
                     <FaCheck className="strength-icon" />
                     <div>
                       <h5>Industry Leadership</h5>
@@ -170,8 +164,7 @@ export default function CompanyDetail() {
                   <div
                     className="strength-item"
                     data-aos="fade-up"
-                    data-aos-delay="100"
-                  >
+                    data-aos-delay="100">
                     <FaCheck className="strength-icon" />
                     <div>
                       <h5>Expert Team</h5>
@@ -184,8 +177,7 @@ export default function CompanyDetail() {
                   <div
                     className="strength-item"
                     data-aos="fade-up"
-                    data-aos-delay="150"
-                  >
+                    data-aos-delay="150">
                     <FaCheck className="strength-icon" />
                     <div>
                       <h5>Proven Track Record</h5>
@@ -198,8 +190,7 @@ export default function CompanyDetail() {
                   <div
                     className="strength-item"
                     data-aos="fade-up"
-                    data-aos-delay="200"
-                  >
+                    data-aos-delay="200">
                     <FaCheck className="strength-icon" />
                     <div>
                       <h5>Continuous Innovation</h5>
@@ -255,8 +246,7 @@ export default function CompanyDetail() {
               <div
                 className="col-lg-3 col-md-4 col-sm-12 mb-4"
                 data-aos="fade-up"
-                data-aos-delay="50"
-              >
+                data-aos-delay="50">
                 <div className="sector-card">
                   <div className="sector-icon">🛍️</div>
                   <h5>Retail</h5>
@@ -265,8 +255,7 @@ export default function CompanyDetail() {
               <div
                 className="col-lg-3 col-md-4 col-sm-12 mb-4"
                 data-aos="fade-up"
-                data-aos-delay="100"
-              >
+                data-aos-delay="100">
                 <div className="sector-card">
                   <div className="sector-icon">🏭</div>
                   <h5> retail manufacturing electronics </h5>
@@ -275,8 +264,7 @@ export default function CompanyDetail() {
               <div
                 className="col-lg-3 col-md-4 col-sm-12 mb-4"
                 data-aos="fade-up"
-                data-aos-delay="150"
-              >
+                data-aos-delay="150">
                 <div className="sector-card">
                   <div className="sector-icon">💻</div>
                   <h5>Electronics</h5>
@@ -285,8 +273,7 @@ export default function CompanyDetail() {
               <div
                 className="col-lg-3 col-md-4 col-sm-12 mb-4"
                 data-aos="fade-up"
-                data-aos-delay="200"
-              >
+                data-aos-delay="200">
                 <div className="sector-card">
                   <div className="sector-icon">🏠</div>
                   <h5>Real Estate</h5>
@@ -295,8 +282,7 @@ export default function CompanyDetail() {
               <div
                 className="col-lg-3 col-md-4 col-sm-12 mb-4"
                 data-aos="fade-up"
-                data-aos-delay="250"
-              >
+                data-aos-delay="250">
                 <div className="sector-card">
                   <div className="sector-icon">🏨</div>
                   <h5>Hotels</h5>
@@ -305,8 +291,7 @@ export default function CompanyDetail() {
               <div
                 className="col-lg-3 col-md-4 col-sm-12 mb-4"
                 data-aos="fade-up"
-                data-aos-delay="300"
-              >
+                data-aos-delay="300">
                 <div className="sector-card">
                   <div className="sector-icon">🏖️</div>
                   <h5>Resorts & Chalets</h5>
@@ -315,8 +300,7 @@ export default function CompanyDetail() {
               <div
                 className="col-lg-3 col-md-4 col-sm-12 mb-4"
                 data-aos="fade-up"
-                data-aos-delay="350"
-              >
+                data-aos-delay="350">
                 <div className="sector-card">
                   <div className="sector-icon">🤖</div>
                   <h5>AI & Technology</h5>
@@ -325,8 +309,7 @@ export default function CompanyDetail() {
               <div
                 className="col-lg-3 col-md-4 col-sm-12 mb-4"
                 data-aos="fade-up"
-                data-aos-delay="400"
-              >
+                data-aos-delay="400">
                 <div className="sector-card">
                   <div className="sector-icon">🖥️</div>
                   <h5>Software</h5>
@@ -335,8 +318,7 @@ export default function CompanyDetail() {
               <div
                 className="col-lg-3 col-md-4 col-sm-12 mb-4"
                 data-aos="fade-up"
-                data-aos-delay="450"
-              >
+                data-aos-delay="450">
                 <div className="sector-card">
                   <div className="sector-icon">🏡</div>
                   <h5>Smart Home</h5>
@@ -345,8 +327,7 @@ export default function CompanyDetail() {
               <div
                 className="col-lg-3 col-md-4 col-sm-12 mb-4"
                 data-aos="fade-up"
-                data-aos-delay="500"
-              >
+                data-aos-delay="500">
                 <div className="sector-card">
                   <div className="sector-icon">🍽️</div>
                   <h5>Hospitality</h5>
