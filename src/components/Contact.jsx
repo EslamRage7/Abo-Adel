@@ -84,8 +84,7 @@ export default function Contact() {
           <p
             className="section-subtitle about-subtitle"
             data-aos="fade-up"
-            data-aos-delay="100"
-          >
+            data-aos-delay="100">
             Have a business opportunity or inquiry? We'd love to hear from you
           </p>
         </div>
@@ -152,8 +151,7 @@ export default function Contact() {
               <button
                 type="submit"
                 className="btn btn-primary btn-lg w-100"
-                disabled={isSending}
-              >
+                disabled={isSending}>
                 {isSending ? "Sending..." : "Send Message"}
               </button>
             </form>

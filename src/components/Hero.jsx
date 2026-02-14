@@ -1,5 +1,5 @@
 import "./css/Hero.css";
-import heroVideo from "../data/assets/bg-video.mp4";
+import heroVideo from "../data/assets/bg-video5.mp4";
 
 export default function Hero() {
   return (
@@ -10,8 +10,7 @@ export default function Hero() {
         autoPlay
         loop
         muted
-        playsInline
-      ></video>
+        playsInline></video>
 
       <div className="hero-overlay"></div>
 
