@@ -34,7 +34,7 @@ export default function Companies() {
             Portfolio of Companies
           </h2>
           <p
-            className="section-subtitle about-subtitle"
+            className="partners-subtitle about-subtitle"
             data-aos="fade-up"
             data-aos-delay="100">
             A diverse ecosystem of 10 successful businesses across multiple

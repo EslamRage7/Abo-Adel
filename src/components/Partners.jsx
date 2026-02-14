@@ -14,7 +14,7 @@ export default function Partners() {
       <div className="container py-5">
         <div className="text-center mb-4">
           <h2 className="about-title">Our Partners</h2>
-          <p className="partners-subtitle mb-5">
+          <p className="partners-subtitle about-subtitle mb-5">
             Trusted collaborations across telecom, logistics, and commerce
           </p>
         </div>
