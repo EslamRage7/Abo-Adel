@@ -7,11 +7,13 @@ import { useEffect } from "react";
 import "./css/CompanyDetail.css";
 import Footer from "../components/Footer";
 import CountUp from "react-countup";
+import Seo from "../components/Seo";
 
 export default function CompanyDetail() {
   const { id } = useParams();
   const navigate = useNavigate();
   const company = companies.find((c) => c.id === parseInt(id));
+  const companyUrlPath = `/company/${id}`;
 
   useEffect(() => {
     AOS.init({ duration: 1000, once: false });
@@ -20,25 +22,54 @@ export default function CompanyDetail() {
 
   if (!company) {
     return (
-      <div className="company-detail error-page">
-        <div className="container py-5">
-          <div className="error-content text-center">
-            <h2>Company Not Found</h2>
-            <p>The company you're looking for doesn't exist.</p>
-            <button
-              className="btn btn-primary mt-4"
-              onClick={() => navigate("/")}
-            >
-              Back to Home
-            </button>
+      <>
+        <Seo
+          title="Company Not Found"
+          description="The requested company page could not be found."
+          noIndex
+        />
+        <div className="company-detail error-page">
+          <div className="container py-5">
+            <div className="error-content text-center">
+              <h2>Company Not Found</h2>
+              <p>The company you're looking for doesn't exist.</p>
+              <button
+                className="btn btn-primary mt-4"
+                onClick={() => navigate("/")}
+              >
+                Back to Home
+              </button>
+            </div>
           </div>
         </div>
-      </div>
+      </>
     );
   }
 
+  const companyStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: company.name,
+    description: company.description,
+    foundingDate: String(company.year),
+    numberOfEmployees: company.employees,
+    url: `${window.location.origin}${companyUrlPath}`,
+    logo: company.logo,
+    parentOrganization: {
+      "@type": "Organization",
+      name: "Humoud Abu Adel Groups",
+      url: window.location.origin,
+    },
+  };
+
   return (
     <>
+      <Seo
+        title={`${company.name} - ${company.category}`}
+        description={company.description}
+        type="article"
+        structuredData={companyStructuredData}
+      />
       <div className="company-detail">
         <div className="company-detail-header mt-5 pt-5">
           <div className="container py-4 mt-5">
