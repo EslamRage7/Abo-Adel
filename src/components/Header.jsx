@@ -21,7 +21,6 @@ export default function Header() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Scroll-spy: Track which section is in view
   useEffect(() => {
     const sections = ["hero", "about", "companies", "stats", "contact"].map(
       (id) => document.getElementById(id),
@@ -31,7 +30,9 @@ export default function Header() {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            setActiveSection(entry.target.id);
+            setActiveSection((prev) =>
+              prev === entry.target.id ? prev : entry.target.id,
+            );
           }
         });
       },
@@ -106,23 +107,19 @@ export default function Header() {
   return (
     <header className="header">
       <nav
-        className={`navbar navbar-expand-lg sticky-top ${isScrolled ? "scrolled" : ""} ${isCompanyDetailPage ? "company-detail-nav" : ""}`}
-      >
+        className={`navbar navbar-expand-lg sticky-top ${isScrolled ? "scrolled" : ""} ${isCompanyDetailPage ? "company-detail-nav" : ""}`}>
         <div className="container-fluid">
           <div
             className="navbar-brand fw-bold brand-link"
             onClick={handleLogoClick}
-            style={{ cursor: "pointer" }}
-          >
-            <img className="img-fluid brand-icon" src={logo} alt="logo" />
+            style={{ cursor: "pointer" }}>
             <span>humoud Abu adel groups</span>
           </div>
 
           <button
             className={`navbar-toggler custom-toggler ${isOpen ? "open" : ""}`}
             onClick={toggleMenu}
-            aria-label="Toggle navigation"
-          >
+            aria-label="Toggle navigation">
             <span className="hamburger">
               {isOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
             </span>
@@ -130,16 +127,14 @@ export default function Header() {
 
           <div
             className={`navbar-collapse ${isOpen ? "show" : ""}`}
-            id="navbarNav"
-          >
+            id="navbarNav">
             <ul className="navbar-nav ms-auto gap-3">
               <li className="nav-item">
                 <a
                   className={`nav-link ${activeSection === "hero" ? "active" : ""}`}
                   onClick={() => handleNavClick("hero")}
                   style={{ cursor: "pointer" }}
-                  onMouseEnter={handleNavLinkHover}
-                >
+                  onMouseEnter={handleNavLinkHover}>
                   Home
                 </a>
               </li>
@@ -148,8 +143,7 @@ export default function Header() {
                   className={`nav-link ${activeSection === "about" ? "active" : ""}`}
                   onClick={() => handleNavClick("about")}
                   style={{ cursor: "pointer" }}
-                  onMouseEnter={handleNavLinkHover}
-                >
+                  onMouseEnter={handleNavLinkHover}>
                   About
                 </a>
               </li>
@@ -158,8 +152,7 @@ export default function Header() {
                   className={`nav-link ${activeSection === "companies" ? "active" : ""}`}
                   onClick={() => handleNavClick("companies")}
                   style={{ cursor: "pointer" }}
-                  onMouseEnter={handleNavLinkHover}
-                >
+                  onMouseEnter={handleNavLinkHover}>
                   Companies
                 </a>
               </li>
@@ -168,8 +161,7 @@ export default function Header() {
                   className={`nav-link ${activeSection === "stats" ? "active" : ""}`}
                   onClick={() => handleNavClick("stats")}
                   style={{ cursor: "pointer" }}
-                  onMouseEnter={handleNavLinkHover}
-                >
+                  onMouseEnter={handleNavLinkHover}>
                   Impact
                 </a>
               </li>
@@ -178,8 +170,7 @@ export default function Header() {
                   className={`nav-link ${activeSection === "contact" ? "active" : ""}`}
                   onClick={() => handleNavClick("contact")}
                   style={{ cursor: "pointer" }}
-                  onMouseEnter={handleNavLinkHover}
-                >
+                  onMouseEnter={handleNavLinkHover}>
                   Contact
                 </a>
               </li>
