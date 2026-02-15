@@ -28,7 +28,9 @@ export default function Preloader() {
         <div className="preloader-logo">
           <img className="img-fluid" src={logo} alt="logo" />
         </div>
-        <div className="preloader-text">humoud Abu adel groups</div>
+        <div className="preloader-text text-capitalize">
+          humoud Abu adel groups
+        </div>
         <div className="preloader-spinner">
           <div className="spinner-circle"></div>
           <div className="spinner-circle"></div>

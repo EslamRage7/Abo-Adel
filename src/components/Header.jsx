@@ -113,7 +113,7 @@ export default function Header() {
             className="navbar-brand fw-bold brand-link"
             onClick={handleLogoClick}
             style={{ cursor: "pointer" }}>
-            <span>humoud Abu adel groups</span>
+            <span className="text-capitalize">humoud Abu adel groups</span>
           </div>
 
           <button

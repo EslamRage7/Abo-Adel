@@ -73,7 +73,6 @@
   box-shadow:
     0 10px 25px #00000026,
     0 0 0 6px #00bcd414;
-
   position: relative;
   z-index: 1;
 }
@@ -146,7 +145,6 @@
 .stat-icon {
   font-size: 2.5rem;
   margin-bottom: 10px;
-  animation: iconBounce 2s ease-in-out infinite;
 }
 
 @keyframes iconBounce {
@@ -307,7 +305,7 @@
 /* Services Section */
 .company-sectors {
   padding: 60px 0;
-  background: #f9f9f9; /* خلي خلفية مختلفة شوية عن الخدمات */
+  background: #f9f9f9;
 }
 
 .company-sectors h2 {
@@ -329,7 +327,7 @@
 }
 
 .sector-card:hover {
-  background: #f0faff; /* تأثير مشابه للخدمات */
+  background: #f0faff;
   border-color: #00bcd4;
   transform: translateY(-8px);
   box-shadow: 0 10px 30px rgba(0, 188, 212, 0.15);
@@ -339,7 +337,6 @@
   font-size: 3rem;
   margin-bottom: 15px;
   display: inline-block;
-  animation: float 3s ease-in-out infinite;
 }
 
 .sector-card:hover .sector-icon {

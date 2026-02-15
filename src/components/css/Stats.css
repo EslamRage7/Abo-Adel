@@ -94,7 +94,6 @@
   font-size: 2.5rem;
   margin-bottom: 15px;
   display: inline-block;
-  animation: iconBounce 2s ease-in-out infinite;
 }
 
 .stat-item:hover .stat-icon {
