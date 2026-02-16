@@ -22,22 +22,19 @@ export default function About() {
                   <div
                     className="about-image secondary-1"
                     data-aos="zoom-in"
-                    data-aos-delay="100"
-                  >
+                    data-aos-delay="100">
                     <div className="about-card">💼</div>
                   </div>
                   <div
                     className="about-image secondary-2"
                     data-aos="zoom-in"
-                    data-aos-delay="200"
-                  >
+                    data-aos-delay="200">
                     <div className="about-card">🚀</div>
                   </div>
                   <div
                     className="about-image secondary-3"
                     data-aos="zoom-in"
-                    data-aos-delay="300"
-                  >
+                    data-aos-delay="300">
                     <div className="about-card">🏆</div>
                   </div>
                 </div>
@@ -45,7 +42,7 @@ export default function About() {
               <div className="col-lg-8" data-aos="fade-left">
                 <div className="about-info">
                   <h2 className="section-title about-title">
-                    Humoud Aboudel Group
+                    Humoud Abu Adel Groups
                   </h2>
                   <p className="about-subtitle">
                     Visionary Entrepreneur & Business Magnate
@@ -66,8 +63,7 @@ export default function About() {
                     <div
                       className="feature"
                       data-aos="fade-up"
-                      data-aos-delay="100"
-                    >
+                      data-aos-delay="100">
                       <div className="feature-icon">🎯</div>
                       <div>
                         <h5>Strategic Vision</h5>
@@ -80,8 +76,7 @@ export default function About() {
                     <div
                       className="feature"
                       data-aos="fade-up"
-                      data-aos-delay="200"
-                    >
+                      data-aos-delay="200">
                       <div className="feature-icon">💡</div>
                       <div>
                         <h5>Innovation Leader</h5>
@@ -94,8 +89,7 @@ export default function About() {
                     <div
                       className="feature"
                       data-aos="fade-up"
-                      data-aos-delay="300"
-                    >
+                      data-aos-delay="300">
                       <div className="feature-icon">🤝</div>
                       <div>
                         <h5>Community Builder</h5>
@@ -109,8 +103,7 @@ export default function About() {
                   <div
                     className="about-achievements"
                     data-aos="fade-up"
-                    data-aos-delay="400"
-                  >
+                    data-aos-delay="400">
                     <div className="achievement-item">
                       <div className="achievement-number">10+</div>
                       <div className="achievement-label">
