@@ -19,7 +19,8 @@ export default function Hero() {
       <div className="hero-content">
         <img src={logo} className="hero-logo" alt="HA Group logo" />
         <div className="hero-text text-center">
-          <h1 className="hero-title">Humoud AbuAdel Groups</h1>
+          <h1 className="hero-title">Humoud</h1>
+          <h1 className="hero-title">Abu Adel Groups</h1>
           <h2 className="hero-subtitle gradient-text">
             Building Impact Across Diverse Industries
           </h2>
