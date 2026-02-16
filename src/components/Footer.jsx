@@ -18,7 +18,7 @@ export default function Footer() {
           <div className="row">
             {/* About */}
             <div className="col-lg-3 col-md-6 col-sm-6" data-aos="fade-up">
-              <h5 className="footer-title">Humoud AbuAdel Groups</h5>
+              <h5 className="footer-title">Humoud Abu Adel Groups</h5>
               <p className="footer-text">
                 Leading entrepreneur with a diverse portfolio of 10 successful
                 companies making a global impact.
