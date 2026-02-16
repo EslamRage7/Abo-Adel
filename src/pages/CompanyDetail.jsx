@@ -75,7 +75,7 @@ export default function CompanyDetail() {
             <div data-aos="fade-right">
               <button
                 className="btn btn-view mb-5"
-                onClick={() => navigate("/")}>
+                onClick={() => navigate(-1)}>
                 <FaArrowLeft /> Back to Companies
               </button>
             </div>

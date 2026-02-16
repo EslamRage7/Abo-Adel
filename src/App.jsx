@@ -4,6 +4,7 @@ import Preloader from "./components/Preloader";
 
 import ScrollProgress from "./components/ScrollProgress";
 import ScrollToTop from "./components/ScrollToTop";
+import ScrollToHash from "./components/ScrollToHash";
 import Home from "./pages/Home";
 import CompanyDetail from "./pages/CompanyDetail";
 
@@ -14,6 +15,7 @@ function App() {
       <ScrollProgress />
       <Header />
       <ScrollToTop />
+      <ScrollToHash />
       <Routes>
         <Route path="/" element={<Home />} />
 

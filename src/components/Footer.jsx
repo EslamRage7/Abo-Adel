@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "./css/Footer.css";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -32,16 +33,16 @@ export default function Footer() {
               <h5 className="footer-title">Quick Links</h5>
               <ul className="footer-links">
                 <li>
-                  <a href="#hero">Home</a>
+                  <Link to="/#hero">Home</Link>
                 </li>
                 <li>
-                  <a href="#about">About</a>
+                  <Link to="/#about">About</Link>
                 </li>
                 <li>
-                  <a href="#companies">Companies</a>
+                  <Link to="/#companies">Companies</Link>
                 </li>
                 <li>
-                  <a href="#contact">Contact</a>
+                  <Link to="/#contact">Contact</Link>
                 </li>
               </ul>
             </div>
