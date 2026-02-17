@@ -4,7 +4,7 @@ import "aos/dist/aos.css";
 import { useEffect, useState } from "react";
 import emailjs from "@emailjs/browser";
 
-import image from "../data/assets/networks.jpeg";
+import image from "../data/assets/networks.png";
 import "./css/Contact.css";
 
 export default function Contact() {
