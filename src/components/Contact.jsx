@@ -89,8 +89,8 @@ export default function Contact() {
           </p>
         </div>
 
-        <div className="row gap-4">
-          <div className="col-lg-12" data-aos="fade-left">
+        <div className="row">
+          <div className="col-lg-6" data-aos="fade-left">
             <form onSubmit={handleSubmit} className="contact-form">
               <div className="form-floating mb-3">
                 <input
@@ -156,9 +156,10 @@ export default function Contact() {
               </button>
             </form>
           </div>
+          <div className="col-lg-6" data-aos="fade-right">
+            <img src={image} className="img-fluid mt-5" alt="network" />
+          </div>
         </div>
-
-        <img src={image} className="img-fluid mt-5" alt="network" />
       </div>
     </section>
   );
