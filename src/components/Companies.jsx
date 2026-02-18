@@ -29,7 +29,7 @@ export default function Companies() {
   return (
     <section id="companies" className="companies">
       <div className="container py-5">
-        <div className="text-center mb-5">
+        <div className="text-center mb-5 pb-1">
           <h2 className="section-title about-title" data-aos="fade-up">
             Portfolio of Companies
           </h2>

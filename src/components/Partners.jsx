@@ -12,7 +12,7 @@ export default function Partners() {
   return (
     <section id="partners" className="partners-section">
       <div className="container py-5">
-        <div className="text-center mb-4">
+        <div className="text-center my-5 pt-4 pb-1">
           <h2 className="about-title">Our Partners</h2>
           <p className="partners-subtitle about-subtitle mb-5">
             Trusted collaborations across telecom, logistics, and commerce
