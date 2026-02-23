@@ -90,7 +90,7 @@ export default function Contact() {
         </div>
 
         <div className="row">
-          <div className="col-lg-6" data-aos="fade-left">
+          <div className="col-lg-6" data-aos="fade-right">
             <form onSubmit={handleSubmit} className="contact-form">
               <div className="form-floating mb-3">
                 <input
@@ -156,7 +156,7 @@ export default function Contact() {
               </button>
             </form>
           </div>
-          <div className="col-lg-6" data-aos="fade-right">
+          <div className="col-lg-6" data-aos="fade-left">
             <img src={image} className="img-fluid mt-5" alt="network" />
           </div>
         </div>

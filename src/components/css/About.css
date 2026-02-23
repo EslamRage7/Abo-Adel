@@ -193,7 +193,6 @@
   background: linear-gradient(135deg, #00bcd414, #2196f314);
   border-radius: 12px;
   border-left: 4px solid #00bcd4;
-  transition: all 0.3s ease !important;
   position: relative;
 }
 
