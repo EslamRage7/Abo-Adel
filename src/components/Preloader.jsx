@@ -24,17 +24,18 @@ export default function Preloader() {
 
   return (
     <div className={`preloader ${!isVisible ? "fade-out" : ""}`}>
+      <div className="preloader-bg-orb orb-1"></div>
+      <div className="preloader-bg-orb orb-2"></div>
       <div className="preloader-content">
         <div className="preloader-logo">
           <img className="img-fluid" src={logo} alt="logo" />
+          <div className="logo-ring"></div>
         </div>
         <div className="preloader-text text-capitalize">
           humoud Abu adel groups
         </div>
-        <div className="preloader-spinner">
-          <div className="spinner-circle"></div>
-          <div className="spinner-circle"></div>
-          <div className="spinner-circle"></div>
+        <div className="preloader-progress" aria-hidden="true">
+          <span className="preloader-progress-bar"></span>
         </div>
         <p className="preloader-subtitle">Shaping the future, one moment...</p>
       </div>
