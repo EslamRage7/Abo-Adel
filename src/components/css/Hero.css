@@ -83,10 +83,6 @@
 }
 
 @media (max-width: 575.98px) {
-  .hero {
-    min-height: 85vh;
-  }
-
   .hero-content {
     padding: 18px;
   }
