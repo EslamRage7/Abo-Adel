@@ -178,15 +178,16 @@
 .about-bottom {
   margin-top: 45px;
   display: grid;
-  grid-template-columns: repeat(4, minmax(160px, 1fr)) minmax(260px, 1.2fr);
+  grid-template-columns: repeat(4, 1fr) 1.2fr;
   gap: 18px;
   align-items: stretch;
+  width: 100%;
 }
 
 .about-pill {
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), #f3f8ff);
   border-radius: 22px;
-  padding: 20px 18px 18px;
+  padding: 20px 16px 18px;
   box-shadow:
     0 16px 36px #0b4c8c26,
     inset 0 0 0 1px #ffffffb3;
@@ -197,6 +198,7 @@
   transition:
     transform 0.3s ease,
     box-shadow 0.3s ease;
+  min-width: 0;
 }
 
 .about-pill::after {
@@ -333,7 +335,8 @@
   }
 
   .about-bottom {
-    grid-template-columns: repeat(2, minmax(160px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
   }
 
   .about-impact {
@@ -341,36 +344,122 @@
   }
 }
 
+@media (max-width: 767.98px) {
+  .about-bottom {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .about-impact {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 675px) {
+  .about-surface {
+    padding: 30px 18px;
+  }
+
+  .about-bottom {
+    margin-top: 35px;
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .about-pill {
+    padding: 18px 14px 16px;
+  }
+
+  .pill-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+  }
+
+  .about-pill h4 {
+    font-size: 0.95rem;
+    margin: 6px 0 4px;
+  }
+
+  .about-pill p {
+    font-size: 0.85rem;
+  }
+}
+
 @media (max-width: 575.98px) {
   .about {
-    padding: 70px 0;
+    padding: 60px 0;
   }
 
   .about-surface {
-    padding: 35px 22px;
-    border-radius: 22px;
+    padding: 28px 16px;
+    border-radius: 18px;
   }
 
   .about-headline {
-    font-size: 2rem;
+    font-size: 1.8rem;
+    margin-bottom: 16px;
+  }
+
+  .about-eyebrow {
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+  }
+
+  .about-lead {
+    font-size: 0.95rem;
   }
 
   .about-cta {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: stretch;
+    gap: 10px;
+    margin-top: 22px;
+  }
+
+  .about-btn {
+    padding: 11px 18px;
+    font-size: 0.9rem;
   }
 
   .about-collage {
-    grid-template-columns: repeat(2, minmax(120px, 1fr));
-    gap: 12px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: 25px;
   }
 
   .collage-card,
   .collage-card.tall {
-    height: 170px;
+    height: 140px;
   }
 
   .about-bottom {
     grid-template-columns: 1fr;
+    gap: 12px;
+    margin-top: 30px;
+  }
+
+  .about-impact {
+    grid-column: 1 / -1;
+    padding: 20px;
+  }
+
+  .impact-header {
+    font-size: 0.95rem;
+    margin-bottom: 14px;
+  }
+
+  .impact-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .impact-grid h3 {
+    font-size: 1.1rem;
+  }
+
+  .impact-grid p {
+    font-size: 0.8rem;
   }
 }

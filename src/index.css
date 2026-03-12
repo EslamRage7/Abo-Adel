@@ -50,7 +50,9 @@ body {
   );
   border-radius: 999px;
   border: 2px solid var(--scrollbar-track);
-  transition: background 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    background 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -132,9 +134,8 @@ select {
 
 /* Section Title */
 .about-title {
-  font-size: clamp(2rem, 3.2vw, 3.2rem);
+  font-size: clamp(1.3rem, 3.2vw, 3.2rem);
   font-weight: 800;
-  letter-spacing: -1.1px;
   line-height: 1.15;
   color: #0b2545;
   position: relative;
@@ -243,4 +244,3 @@ select {
     font-size: 14px;
   }
 }
-
