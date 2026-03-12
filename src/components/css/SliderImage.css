@@ -1,0 +1,22 @@
+﻿.slider-image {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.slider-image-media {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .slider-image,
+  .slider-image-media {
+    min-height: 70vh;
+  }
+}
