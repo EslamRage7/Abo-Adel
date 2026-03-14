@@ -1,5 +1,6 @@
 ﻿import Hero from "../components/Hero";
-import SliderImage from "../components/SliderImage";
+import HeroSlider from "../components/HeroSlider";
+
 import StoreCarousel from "../components/StoreCarousel";
 import About from "../components/About";
 import Companies from "../components/Companies";
@@ -28,7 +29,8 @@ export default function Home() {
         structuredData={homeStructuredData}
       />
       <Hero />
-      <SliderImage />
+      <HeroSlider />
+
       <StoreCarousel />
       <About />
       <Companies />
