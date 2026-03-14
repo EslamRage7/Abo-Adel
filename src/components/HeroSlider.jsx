@@ -8,7 +8,7 @@ export default function HeroSlider() {
       <div className="hero-slider-background">
         <picture>
           {/* Mobile Image */}
-          <source media="(max-width: 668px)" srcSet={heroImageMobile} />
+          <source media="(max-width: 675px)" srcSet={heroImageMobile} />
 
           {/* Default Desktop Image */}
           <img src={heroImage} alt="Hero" className="hero-slider-image" />

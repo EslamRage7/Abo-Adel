@@ -30,12 +30,12 @@ export default function StoreCarousel() {
   };
 
   return (
-    <section className="store-carousel my-5" aria-label="Store gallery">
-      <div className="container-fluid py-5">
+    <section className="store-carousel" aria-label="Store gallery">
+      <div className="container-fluid ">
         <div className="text-center mb-4">
-          <h2 className="section-title about-title">Store Gallery</h2>
+          <h2 className="section-title about-title"> Our Business</h2>
           <p style={{ color: "#0b2545" }} className="">
-            Slideshow of all companies in the group
+            All companies in the group
           </p>
         </div>
 
