@@ -67,7 +67,7 @@
 .hero-slider-image {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   object-position: center;
   display: block;
 }
@@ -340,8 +340,7 @@
 
 @media (max-width: 768px) {
   .hero-slider {
-    height: 400px;
-    min-height: 350px;
+    height: 135vh;
   }
 
   .hero-slider-container {
@@ -403,10 +402,20 @@
   }
 }
 
+@media (max-width: 500px) {
+  .hero-slider-image {
+    object-fit: fill;
+  }
+}
+
 @media (max-width: 480px) {
   .hero-slider {
-    height: 300px;
-    min-height: 280px;
+    height: 115vh;
+  }
+  @media (max-width: 320px) {
+    .hero-slider {
+      height: 100vh;
+    }
   }
 
   .hero-slider-container {

@@ -41,7 +41,7 @@
 .partner-item {
   background: white;
   border-radius: 16px;
-  height: 180px;
+  height: 230px;
   box-shadow: 0px 0px 20px 0px #00000021;
   transition: all 0.3s ease;
   padding: 24px 18px;
@@ -58,21 +58,22 @@
 }
 
 .partner-logo {
-  width: 96px;
-  height: 96px;
+  width: 130px;
+  height: 130px;
   margin: 0 auto;
   object-fit: contain;
   border-radius: 50%;
   padding: 10px;
   background: #ffffff;
-  border: 2px solid rgba(0, 188, 212, 0.25);
+  border: 2px solid #00bcd440;
   box-shadow:
-    0 8px 18px rgba(0, 0, 0, 0.08),
-    inset 0 0 0 1px rgba(255, 255, 255, 0.7);
+    0 8px 18px #00000014,
+    inset 0 0 0 1px #ffffffb3;
 }
 
 .partner-name {
-  font-size: 0.95rem;
+  font-size: 1rem;
+  font-weight: 600;
   line-height: 1.2;
 }
 

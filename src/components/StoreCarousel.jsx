@@ -1,7 +1,6 @@
 ﻿import { useEffect, useMemo, useState } from "react";
 import { slide } from "../data/companies";
 import "./css/StoreCarousel.css";
-import bg from "../data/assets/bg.jpeg";
 
 export default function StoreCarousel() {
   const slides = useMemo(
@@ -51,7 +50,7 @@ export default function StoreCarousel() {
                 <img src={slide.image} alt={slide.name} />
 
                 <div className="store-slide-overlay">
-                  <div className="store-slide-meta">
+                  <div className="store-slide-meta text-capitalize">
                     <h3>{slide.name}</h3>
                   </div>
                 </div>

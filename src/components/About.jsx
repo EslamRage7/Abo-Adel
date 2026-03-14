@@ -20,7 +20,7 @@ export default function About() {
           <div className="row align-items-center">
             <div className="col-lg-6" data-aos="fade-right">
               <div className="about-copy">
-                <p className="about-eyebrow">Humoud Abu Adel Groups</p>
+                <p className="about-eyebrow">Homoud Abu Adel Groups</p>
                 <h2 className="about-headline">
                   Building <span>Businesses</span>,<br />
                   Creating <span>Value</span>,<br />

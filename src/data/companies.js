@@ -29,9 +29,17 @@ import anker from "./assets/anker.png";
 import freshdesk from "./assets/freshdesk.png";
 import Jameia from "./assets/Jameia.png";
 
-import bg from "./assets/bg.jpeg";
-import bg2 from "./assets/bg-2.png";
-import bg3 from "./assets/bg-3.png";
+import mobile2000 from "./companies/1-mobile2000.png";
+import IHM from "./companies/3-IHM.png";
+import C90percent from "./companies/90percent.png";
+import aslitec from "./companies/aslitec.png";
+import grande from "./companies/grande.png";
+import grande1 from "./companies/grande1.png";
+import homoudtower from "./companies/homoud tower.png";
+import lzel from "./companies/lzel.png";
+import smarthome from "./companies/smarthome.png";
+import uptickmark from "./companies/uptickmark.png";
+import xmart from "./companies/xmart.png";
 
 export const partners = [
   { name: "Cinet", logo: Cinet },
@@ -188,10 +196,10 @@ export const companies = [
   },
   {
     id: 13,
-    name: "Humoud Towers",
+    name: "Homoud Towers",
     category: "Real Estate & Property Development",
     description:
-      "Humoud Towers represents the group’s real estate division, specializing in property development and investment, delivering modern residential and commercial spaces.",
+      "Homoud Towers represents the group’s real estate division, specializing in property development and investment, delivering modern residential and commercial spaces.",
     logo: HumoudTowers,
     year: 2018,
     employees: 175,
@@ -210,16 +218,56 @@ export const slide = [
   {
     id: 1,
     name: "mobile 2000",
-    path: bg,
+    path: mobile2000,
   },
   {
     id: 2,
-    name: "Xmartmobiles",
-    path: bg2,
+    name: "Ihm",
+    path: IHM,
   },
   {
     id: 3,
-    name: "Lzel",
-    path: bg3,
+    name: "aslitec",
+    path: aslitec,
+  },
+  {
+    id: 4,
+    name: "grande beach",
+    path: grande,
+  },
+  {
+    id: 5,
+    name: "grande",
+    path: grande1,
+  },
+  {
+    id: 6,
+    name: "homoud tower",
+    path: homoudtower,
+  },
+  {
+    id: 7,
+    name: "lzel",
+    path: lzel,
+  },
+  {
+    id: 8,
+    name: "smart home",
+    path: smarthome,
+  },
+  {
+    id: 9,
+    name: "90percent",
+    path: C90percent,
+  },
+  {
+    id: 10,
+    name: "UPtickmark",
+    path: uptickmark,
+  },
+  {
+    id: 11,
+    name: "xmart",
+    path: xmart,
   },
 ];
