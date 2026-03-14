@@ -52,9 +52,8 @@ export default function Hero() {
           <h1 className="hero-title">Homoud</h1>
           <h1 className="hero-title">Abu Adel Groups</h1>
 
-          <h3 className="hero-subtitle gradient-text d-flex align-items-center justify-content-center ">
+          <h3 className="hero-subtitle gradient-text d-flex align-items-center justify-content-center">
             {currentPhrase.slice(0, chars)}
-            <span className="hero-caret">|</span>
           </h3>
         </div>
       </div>
